@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luis Pau Corticona | CV</title>
+<meta name="description" content="CV de Luis Pau Corticona, egresado de Arquitectura de Plataformas y Servicios de TI. Desarrollo web, soporte y redes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===== MENÚ ===== -->
+<header class="top">
+  <a class="logo" href="#inicio">LP</a>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a><a href="#formacion">Formación</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<!-- ===== INICIO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="status"><span class="dot"></span>Disponible para prácticas y primeras oportunidades</p>
+    <h1>Luis Pau<br>Corticona</h1>
+    <p class="lead">Egresado de Arquitectura de Plataformas y Servicios de TI. Construyo páginas web, tiendas y sistemas, y doy soporte técnico.</p>
+    <div class="actions">
+      <a class="btn primary" id="wa" href="https://wa.me/51987654321" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn" href="mailto:luispaucorticona@gmail.com">Enviar correo</a>
+      <button class="btn" id="print" type="button">Guardar como PDF</button>
+    </div>
+  </div>
+  <!-- FOTO: guarda tu foto como foto.jpg (cuadrada o vertical) -->
+  <figure class="photo">
+    <img src="foto.jpg" alt="Foto de Luis Pau Corticona" onerror="this.parentNode.classList.add('empty');this.remove()">
+    <span class="initials">LP</span>
+  </figure>
+</section>
+
+<!-- ===== SOBRE MÍ ===== -->
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <p class="wide">Soy un joven persistente que le pone ganas a casi todo lo que hace y busca que cada trabajo salga bien. Termino mi carrera técnica en 2026 y ya he desarrollado sitios web, una tienda en línea y un sistema de biblioteca. Me gusta aprender haciendo y mejorar cada versión.</p>
+</section>
+
+<!-- ===== FORMACIÓN ===== -->
+<section id="formacion">
+  <h2>Formación</h2>
+  <ol class="timeline">
+    <li><time>2024 a 2026</time><h3>Arquitectura de Plataformas y Servicios de TI</h3><p>Instituto de Educación Superior Tecnológico Santa Lucía. Sexto y último semestre en curso.</p></li>
+    <li><time>Secundaria</time><h3>I.E. José Carlos Mariátegui</h3><p>Educación básica completa.</p></li>
+  </ol>
+  <h3 class="sub">Cursos y certificados</h3>
+  <ul class="chips">
+    <li>Fibra óptica (nivel básico)</li><li>Instalación eléctrica (nivel básico)</li><li>Excel (básico a intermedio)</li><li>Certificados del instituto</li>
+  </ul>
+  <p class="note">Idiomas: español nativo.</p>
+</section>
+
+<!-- ===== HABILIDADES (capas de una plataforma) ===== -->
+<section id="habilidades">
+  <h2>Habilidades</h2>
+  <p class="wide">Mi carrera trata sobre cómo se arma una plataforma completa. Por eso ordeno lo que sé por capas, de lo que ve el usuario hasta la infraestructura.</p>
+  <div class="stack">
+    <div class="layer l1"><h3>Interfaz</h3><p>HTML5, CSS3, JavaScript, diseño web responsive</p></div>
+    <div class="layer l2"><h3>Aplicación</h3><p>Python, Django, WordPress, WooCommerce</p></div>
+    <div class="layer l3"><h3>Datos y herramientas</h3><p>Bases de datos, Excel, Git y GitHub</p></div>
+    <div class="layer l4"><h3>Infraestructura y soporte</h3><p>Redes, mantenimiento de equipos, fibra óptica, electricidad básica</p></div>
+  </div>
+</section>
+
+<!-- ===== PROYECTOS ===== -->
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="cards">
+    <!-- Cambia cada href="#" por el enlace real (GitHub o demo). Si dejas "#", el botón se oculta solo. -->
+    <article><h3>Sistema de biblioteca</h3><p>Gestión de libros, préstamos, multas y roles de usuario, con biblioteca virtual y portal público.</p><small>Django, MySQL, Bootstrap</small><a href="#" class="proj">Ver proyecto</a></article>
+    <article><h3>Sitio web institucional</h3><p>Página de 6 secciones para el instituto Santa Lucía, con identidad visual propia.</p><small>HTML, CSS, JavaScript</small><a href="#" class="proj">Ver proyecto</a></article>
+    <article><h3>Tienda de accesorios</h3><p>Tienda en línea de accesorios para celulares con carrito, blog y página Nosotros.</p><small>WordPress, WooCommerce</small><a href="#" class="proj">Ver proyecto</a></article>
+    <article><h3>Pollería Maricucha</h3><p>Sitio multipágina para un restaurante, con carta, ilustraciones SVG y paleta cálida.</p><small>HTML, CSS, JavaScript</small><a href="#" class="proj">Ver proyecto</a></article>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCIA ===== -->
+<section id="experiencia">
+  <h2>Experiencia</h2>
+  <ol class="timeline">
+    <li><time>2024 a 2026</time><h3>Prácticas por módulos</h3><p>Tres módulos formativos, uno por año, realizados en el instituto. En ellos desarrollé proyectos web, atendí soporte técnico y trabajé en equipo con compañeros.</p></li>
+  </ol>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <ul>
+    <li><span>WhatsApp</span><a href="https://wa.me/51987654321">987 654 321</a></li>
+    <li><span>Correo</span><a href="mailto:luispaucorticona@gmail.com">luispaucorticona@gmail.com</a></li>
+    <li><span>Ubicación</span>Santa Lucía, Perú</li>
+    <li><span>GitHub</span><a id="gh" href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">github.com/TU-USUARIO</a></li>
+  </ul>
+</section>
+</main>
+<footer>© <span id="y"></span> Luis Pau Corticona</footer>
+<script src="main.js"></script>
+</body>
+</html>

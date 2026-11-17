@@ -1,0 +1,68 @@
+/* Paleta */
+:root{--bg:#F2F4F8;--ink:#0C1A3A;--blue:#2447F5;--sky:#CFE0FF;--sun:#FFB400;--mute:#4A5878;--line:#D5DBE8;--w:1060px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:17px/1.65 Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+section,.top{max-width:var(--w);margin-inline:auto;padding:72px 24px}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:24px;font-weight:800}
+.wide{max-width:62ch;color:var(--mute)}
+/* Menú */
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 24px;max-width:none;background:rgba(242,244,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font:800 1.2rem "Bricolage Grotesque",sans-serif;text-decoration:none;background:var(--ink);color:#fff;padding:4px 12px;border-radius:8px}
+nav{display:flex;gap:20px;overflow-x:auto}
+nav a{text-decoration:none;font-weight:500;color:var(--mute);white-space:nowrap}
+nav a:hover,nav a.on{color:var(--blue)}
+/* Hero */
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center;min-height:82vh}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.95rem;background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:99px;margin-bottom:24px}
+.dot{width:9px;height:9px;border-radius:50%;background:#1BA86B}
+h1{font-size:clamp(3rem,9vw,6.2rem);font-weight:800;letter-spacing:-.03em;color:var(--blue)}
+.lead{max-width:46ch;margin:24px 0 32px;font-size:1.2rem;color:var(--mute)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font:600 1rem Figtree,sans-serif;padding:12px 22px;border-radius:10px;border:2px solid var(--ink);background:transparent;color:var(--ink);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.primary:hover{background:var(--ink);border-color:var(--ink)}
+.photo{position:relative;aspect-ratio:4/5;border-radius:24px 24px 120px 24px;overflow:hidden;background:var(--sky);box-shadow:14px 14px 0 var(--sun)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.initials{display:none;position:absolute;inset:0;place-items:center;font:800 5rem "Bricolage Grotesque",sans-serif;color:var(--blue)}
+.photo.empty .initials{display:grid}
+/* Formación y experiencia */
+.timeline{list-style:none;padding:0;border-left:3px solid var(--blue);display:grid;gap:28px;margin-left:6px}
+.timeline li{padding-left:28px;position:relative;max-width:64ch}
+.timeline li::before{content:"";position:absolute;left:-11px;top:6px;width:19px;height:19px;border-radius:50%;background:var(--bg);border:4px solid var(--blue)}
+time{font-weight:600;color:var(--blue)}
+.timeline h3{font-size:1.4rem;margin:2px 0 6px}
+.timeline p,.note{color:var(--mute)}
+.sub{margin:44px 0 14px;font-size:1.3rem}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.chips li{background:#fff;border:1px solid var(--line);padding:6px 16px;border-radius:99px;font-weight:500}
+/* Capas */
+.stack{display:grid;gap:10px;margin-top:32px}
+.layer{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:center;padding:22px 28px;border-radius:14px}
+.layer h3{font-size:1.25rem}
+.l1{background:var(--blue);color:#fff;margin-inline:0}
+.l2{background:#4A68F7;color:#fff;margin-inline:2.5%}
+.l3{background:var(--sky);margin-inline:5%}
+.l4{background:var(--ink);color:#fff;margin-inline:7.5%}
+/* Proyectos */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:10px}
+article h3{font-size:1.3rem}
+article p{color:var(--mute);flex:1}
+article small{font-weight:600;color:var(--blue)}
+.proj{font-weight:600;text-decoration:none;border-bottom:2px solid var(--sun);align-self:flex-start}
+/* Contacto */
+.contact{background:var(--ink);color:#fff;max-width:none;border-radius:32px 32px 0 0;padding-inline:max(24px,calc((100% - var(--w))/2 + 24px))}
+.contact ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.contact span{display:block;color:var(--sun);font-weight:600}
+.contact a{text-decoration-color:var(--sun);text-underline-offset:4px;word-break:break-all}
+footer{background:var(--ink);color:#9FB0D8;text-align:center;padding:20px;font-size:.9rem}
+/* Móvil */
+@media(max-width:780px){.hero{grid-template-columns:1fr;min-height:0}.photo{max-width:320px;order:-1}.layer{grid-template-columns:1fr;gap:4px}.layer[class]{margin-inline:0}section{padding-block:52px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Impresión / PDF */
+@media print{.top,.actions,footer{display:none}body{background:#fff}section{padding:20px 0;break-inside:avoid}.hero{min-height:0}.contact{background:#fff;color:#000}.contact span{color:#444}.photo{box-shadow:none}}
